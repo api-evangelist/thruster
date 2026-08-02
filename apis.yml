@@ -1,8 +1,27 @@
 aid: thruster
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/thruster.png
 name: Thruster
-description: 'Thruster is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Thruster was a yield-first decentralized exchange (DEX) built natively on the
+  Blast Ethereum Layer 2, offering Uniswap-style v2 and v3 concentrated
+  liquidity AMMs, a stableswap AMM, and a token launchpad. Backed by Pantera
+  Capital, the protocol shut down on July 29, 2025 after completing THRUST
+  holder redemptions; its thruster.finance website is offline, while the
+  GitBook documentation and the ThrusterX GitHub organization (Solidity
+  contracts and audit reports) remain the surviving public record. No REST/HTTP
+  API was published; the developer surface was on-chain smart contracts on
+  Blast.
 url: https://raw.githubusercontent.com/api-evangelist/thruster/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +29,18 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-defunct: '2025-07-29'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- DeFi
+- DEX
+- Blast
+- AMM
+- Ethereum
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,24 @@ maintainers:
 common:
 - type: Website
   url: https://www.thruster.finance/
+- type: Documentation
+  url: https://thruster.gitbook.io/thruster
+- type: GitHubOrganization
+  url: https://github.com/ThrusterX
+- type: TermsOfService
+  url: https://thruster.gitbook.io/thruster/informational/terms-of-use
+- type: PrivacyPolicy
+  url: https://thruster.gitbook.io/thruster/informational/privacy-policy
+- type: LLMsTxt
+  url: llms/thruster-llms.txt
+- type: DomainSecurity
+  url: security/thruster-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/thruster-vulnerability-disclosure.yml
+- type: Security
+  url: https://thruster.gitbook.io/thruster/informational/audit-and-security
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
